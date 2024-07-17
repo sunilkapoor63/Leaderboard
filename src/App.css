@@ -1,0 +1,49 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leaderboard {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer img {
+  width: 100%;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.add-score-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-score-popup form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-score-popup label {
+  margin-bottom: 10px;
+}
