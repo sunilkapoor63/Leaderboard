@@ -24,6 +24,8 @@ const Leaderboard: React.FC = () => {
             else if (index === 1) className = 'silver';
             else if (index === 2) className = 'bronze';
 
+            if (index === scores.length - 1) className += ' recent-score';
+
             return (
               <tr key={index} className={className}>
                 <td>{index + 1}</td>

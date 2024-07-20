@@ -24,6 +24,15 @@ const AddScorePopup: React.FC = () => {
     dispatch(addScore({ username, time }));
     setUsername('');
     setTime('');
+
+    // Add animation class
+    const recentScore = document.querySelector('.recent-score');
+    if (recentScore) {
+      recentScore.classList.add('animate');
+      setTimeout(() => {
+        recentScore.classList.remove('animate');
+      }, 1000);
+    }
   };
 
   return (
